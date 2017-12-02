@@ -1,7 +1,8 @@
-<p>
+<p  id="string-component">
   string-component works!
-
 </p>
 <p>Message ::-  {{welcomeString}}</p>
-your input string : <input type="text" placeholder="type it here" (keyup)="getInputTextValues($event)" />  
-<button (click)="changeStringText()">changeStringText</button>
+your input string : <input type="text" placeholder="type it here" #inputText />  
+<button (click)="changeStringText(inputText.value)">changeStringText</button>
+<br>
+<h3><label for="substring" h1>substring</label></h3>

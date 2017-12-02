@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { StringComponentComponent } from './string-component/string-component.component';
+import { ArrayComponenetComponent } from './array-componenet/array-componenet.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StringComponentComponent
+    StringComponentComponent,
+    ArrayComponenetComponent
   ],
   imports: [
     BrowserModule

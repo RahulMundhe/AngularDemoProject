@@ -1,0 +1,14 @@
+<p id="array-componenet">
+  array-componenet works!
+</p>
+
+<ol>
+  <li *ngFor="let item of arraylist">
+    <p *ngIf="1 == 1">{{item}}</p>
+  </li>
+</ol>
+<div>
+  <p>
+    <input type="text" placeholder="type entry you want to remove" #inputText  size="23"/> : <button (click)="addElementInArray(inputText.value)">addElement in Array</button>
+  </p>
+</div>

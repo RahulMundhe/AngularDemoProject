@@ -13,11 +13,11 @@ export class StringComponentComponent implements OnInit {
   ngOnInit() {
 
   }
-  public getInputTextValues(event) {
-    this.userText = event.target.value;
-  }
-  public changeStringText() {
-    this.welcomeString = this.userText;
+  // public getInputTextValues(event) {
+  //   this.userText = event.target.value;
+  // }
+  public changeStringText(userText) {
+    this.welcomeString = userText;
     alert(this.welcomeString);
   }
 }
