@@ -1,3 +1,6 @@
 <p>
   material-demo works!
 </p>
+<mat-checkbox #TestCheckBox [value]='defaultString' labelPosition={{labelPosition}}
+(change) = "onChecked(TestCheckBox.checked)"
+>{{defaultString}}</mat-checkbox>
