@@ -12,3 +12,9 @@
     <input type="text" placeholder="type entry you want to remove" #inputText  size="23"/> : <button (click)="addElementInArray(inputText.value)">addElement in Array</button>
   </p>
 </div>
+
+<div>
+  <li *ngFor='let value of arrayInput'>
+    {{value.id}} , {{value.name}} , {{value.Email_Id}}
+  </li>
+</div>

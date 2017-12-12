@@ -6,3 +6,8 @@ your input string : <input type="text" placeholder="type it here" #inputText />
 <button (click)="changeStringText(inputText.value)">changeStringText</button>
 <br>
 <h3><label for="substring" h1>substring</label></h3>
+<div>
+  <li *ngFor='let value of arrayInput'>
+    {{value.id}} , {{value.name}} , {{value.Email_Id}}
+  </li>
+</div>
