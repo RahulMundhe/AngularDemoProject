@@ -8,12 +8,15 @@ import { ArrayComponenetComponent } from './array-componenet/array-componenet.co
 import { MaterialDemoComponent } from './material-demo/material-demo.component';
 import { MatCheckboxModule } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import { MatTableModule } from '@angular/material';
+
 
 const appRoutes: Routes = [
   { path: 'StringComponent', component: StringComponentComponent },
   { path: 'ArrayComponent', component: ArrayComponenetComponent },
   { path: 'MaterialDemoComponent', component: MaterialDemoComponent },
-  
+
 ];
 
 
@@ -25,12 +28,13 @@ const appRoutes: Routes = [
     MaterialDemoComponent
   ],
   imports: [
+    MatTableModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
     ),
     BrowserModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

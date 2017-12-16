@@ -1,6 +1,48 @@
 <p>
   material-demo works!
 </p>
-<mat-checkbox #TestCheckBox [value]='defaultString' labelPosition={{labelPosition}}
-(change) = "onChecked(TestCheckBox.checked)"
->{{defaultString}}</mat-checkbox>
+<mat-checkbox #TestCheckBox [value]='defaultString' labelPosition={{labelPosition}} (change)="onChecked(TestCheckBox.checked)">{{defaultString}}</mat-checkbox>
+<br><br>
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- employeeCode Column -->
+    <ng-container matColumnDef="employeeCode">
+      <mat-header-cell *matHeaderCellDef> Emp ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.employeeCode}} </mat-cell>
+    </ng-container>
+
+    <!-- firstName Column -->
+    <ng-container matColumnDef="firstName">
+      <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.firstName}} </mat-cell>
+    </ng-container>
+
+    <!-- lastName Column -->
+    <ng-container matColumnDef="lastName">
+      <mat-header-cell *matHeaderCellDef> last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName}} </mat-cell>
+    </ng-container>
+
+
+
+    <!-- jobTitleName Column -->
+    <ng-container matColumnDef="jobTitleName">
+      <mat-header-cell *matHeaderCellDef> jobTitleName </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.jobTitleName}} </mat-cell>
+    </ng-container>
+
+
+    <!-- emailAddress Column -->
+    <ng-container matColumnDef="emailAddress">
+      <mat-header-cell *matHeaderCellDef> Email Id </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.emailAddress}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>

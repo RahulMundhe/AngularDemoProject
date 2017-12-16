@@ -1,0 +1,35 @@
+[
+    {
+    "userId":"Rahul1",
+    "jobTitleName":"Developer",
+    "firstName":"Rahul",
+    "lastName":"Mundhe",
+    "preferredFullName":"Rahul Mundhe",
+    "employeeCode":"E1",
+    "region":"Pune MH",
+    "phoneNumber":"0000000000",
+    "emailAddress":"Rahulmundhe.r@gmail.com"
+    },
+    {
+    "userId":"Dummy User",
+    "jobTitleName":"Developer",
+    "firstName":"Dummy user 1",
+    "lastName":"Dummy",
+    "preferredFullName":"Dummy user 1",
+    "employeeCode":"E2",
+    "region":"Mumbai MH",
+    "phoneNumber":"0000011111",
+    "emailAddress":"dummy1@gmail.com"
+    },
+    {
+    "userId":"thanks",
+    "jobTitleName":"QA",
+    "firstName":"Dummy user 2",
+    "lastName":"Dummy",
+    "preferredFullName":"Dummy user 2",
+    "employeeCode":"E3",
+    "region":"Goa GA",
+    "phoneNumber":"0000022222",
+    "emailAddress":"Dummy2@gmail.com"
+    }
+    ]
